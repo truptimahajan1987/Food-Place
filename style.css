@@ -1,0 +1,421 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh;
+    width: 100vw; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* navbar */
+.navbar{
+display: flex;
+position: fixed;
+top:0px;
+background-color: white;
+width: 100%;
+/* overflow: hidden; */
+}
+.logo {
+    height: 50px;
+    width: 150px;
+}
+ul {
+    display: flex;
+    list-style: none;   
+
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    padding:0.7rem 2rem;
+    border-radius: 5px;
+}
+.active, .nav-link:hover{
+    background-color: #deb887;
+    color: white;
+}
+.dropdown .link{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+
+}
+.dropdown .link:hover{
+    background-color: #deb887;
+    color: white;
+    border-radius: 5px;
+    
+}
+.dropdown-content .sub-link:hover{
+    background-color: #deb887;
+    color: white;
+    border-radius: 5px;
+}
+/* artical  */
+.intro{
+    background-image:linear-gradient(0deg, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.5)), url("p2.jpeg");
+    /* background-image: url("p2.jpeg"); */
+    background-size: contain;
+    padding: 14% 0 7% 0;
+    
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+div{
+    display: block;
+}
+
+.reserv a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 11px 60px;
+    border:3px solid #deb887;
+    border-radius: 5px;
+    font-size: 1.3rem;
+ 
+}
+.reserv{
+    margin-top: 2rem;
+    
+}
+.reserv a:hover{
+    
+    background-color: #deb887;
+    color: white;
+    border-radius: 5px;
+    
+}
+.intro-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.5rem;
+}
+.intro-info {
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+    
+}
+/* session */
+#story-section{
+    width: 100%;
+}
+.mid{
+   
+    display: flex;
+    /* align-items: center; */
+    /* width:100%; */
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+.img .story-img{
+    height: 400px;
+    width: 500px;
+    box-shadow: -10px -10px #deb887;
+}
+.story{
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    width:50%;
+}
+.story .reserv a {
+    color: black;
+}
+.story .reserv a:hover {
+    color:white;
+}
+.h1color{
+    color: #deb887;
+}
+.story .story-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* letter-spacing: 0.2rem; */
+}
+.story .story-subheading{
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+}
+.quote-section{
+    /* background-image: url("./quote.jpeg"); */
+    background-image: linear-gradient(0deg, rgba(1,1,1,0.4), rgba(1,1,1,0.6)) , url("./quote.jpeg");
+    height:20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+
+    
+}
+.quote{
+   
+    color: white;
+    font-size: 2.5rem;
+    padding:4rem 0 2rem 2rem;
+    
+}
+.quote-credit{
+    padding-left: 25rem;
+    font-size: 1.5rem;
+}
+/* Menu */
+.menu-section{
+    text-align: center;
+    padding:2rem;
+}
+.heading{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.subheading{
+    padding: 0.6rem;
+    font-size: 1.3rem;
+}
+.nav-menu{
+    display: flex;
+    width:50%;
+    margin-inline: auto;
+   
+   }
+
+
+.menu-link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-border {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 0 2.5rem;
+    margin: auto;
+}
+.menu-border li{
+    margin:1.3rem 1.4rem;
+}
+.menu-link:hover{
+    background-color: #deb887;
+    color: white;
+    border-radius: 5px;
+    
+}
+.active-menu{
+    background-color: #deb887;
+    color: white;
+    border-radius: 5px;
+}
+.menu-item{
+    display: flex;
+    width:80%;
+    /* margin-top: 2.5rem; */
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+.items{
+    /* border: 1px solid black; */
+    margin: 2rem 1.5rem; 
+    height:231px;
+    background-size: cover;
+    color: white;
+    width: 327px;
+    /* display: inline-block; */
+}
+.drink1{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g1.jpg");
+}
+.drink2{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g2.jpg");
+}
+.drink3{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.lunch1{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.lunch2{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.lunch3{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.dinner1{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.dinner2{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+.dinner3{
+    background-image: linear-gradient(0deg, rgba(255,153,51,0.7),rgba(255,153,51,0.8)),url("./g3.jpg");
+}
+
+.text{
+    text-align: left;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+.text h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.text p{
+    padding-top:1rem;
+    padding-bottom: 3rem;
+    line-height: 1rem;
+    border-bottom: 2px dotted black;
+}
+.text h5{
+    padding-top: 0.8rem;
+    font-size: 1rem;
+    font-weight:bolder;
+}
+/* Gallery */
+#gallery-section{
+text-align: center;
+}
+#gallery-section h2{
+    font-size: 2rem;
+    margin:1rem;
+}
+#gallery-section p{
+    font-size: 1.2rem;
+   
+}
+.gallery{
+    width: 100%;
+    padding:1rem 2rem;
+    
+}
+.gallery-img
+{
+height: 231px;
+width: 331px;
+margin: 1.5rem 1rem;
+/* transition: 2s; */
+
+}
+.gallery-img:hover{
+    /* height: 250px;
+width: 350px; */
+transform: scale(1.1);
+}
+/* customer section */
+#customer-section{
+    text-align: center;
+    padding: 2.5rem 3rem;
+}
+.customer-name{
+    color: #deb887;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.customer-img{
+    border: 1px solid grey;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+.customer-subheading{
+    font-weight: bold;
+}
+/* Contact */
+.section-info{
+    background-color: #deb887;
+    display: flex;
+    text-align: center;
+    
+}
+.contact{
+    color: white;
+    width:32%;
+    text-align: center;
+    display:inline-block;
+    padding: 1.3rem 0rem;
+}
+.contact-details{
+    display: inline-block;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 1px;
+}
+.contact-details h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* footer */
+.footer{
+    background-color:rgb(23, 22, 22);
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+.footer-elements{
+    width:25%;
+    padding: 1.3rem 2rem;
+    text-align: left;
+    margin:3rem 1rem;
+}
+.footer-heading{
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #deb887;
+    margin-bottom: 1rem;
+}
+.email{
+padding-top: 0.5rem;
+padding-bottom: 0.3rem;
+width:277px;
+background-color: black;
+color: bisque;
+font-size: 1.2rem;
+font-weight: bold;
+border: none;
+}
+
+.subscribe{
+    width:277px;
+    padding: 0.5rem 0rem;
+    background-color: #deb887;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.social{
+    margin:1rem;
+}
+.social a{
+    /* padding: 0.2rem; */
+    color: white;
+    font-size: 1.9rem;
+    padding: 0.4rem;
+    
+}
+.copy-right{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:2rem 0rem;
+    font-size: 1.1rem;
+}
